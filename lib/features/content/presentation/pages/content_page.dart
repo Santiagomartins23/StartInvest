@@ -47,7 +47,7 @@ class ContentPage extends StatelessWidget {
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   padding: const EdgeInsets.symmetric(horizontal: 24),
-                  separatorBuilder: (_, _unused) => const SizedBox(width: 12),
+                  separatorBuilder: (_, unused) => const SizedBox(width: 12),
                   itemCount: 2,
                   itemBuilder: (context, i) => _CourseCard(
                     title: i == 0 ? 'Bolsa de Valores I' : 'Planejamento Pessoal',
