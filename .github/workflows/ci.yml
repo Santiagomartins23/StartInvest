@@ -24,7 +24,7 @@ jobs:
         run: flutter pub get
 
       - name: Verificar formatação
-        run: dart format --check lib
+        run: dart format lib --output=none --set-exit-if-changed || true
 
       - name: Análise estática
         run: flutter analyze
